@@ -878,6 +878,9 @@ dtb-$(CONFIG_ARCH_IMX8M) += \
 	imx8mp-var-dart-dt8mcustomboard.dtb \
 	imx8mp-var-dart-dt8mcustomboard-legacy.dtb \
 	imx8mp-var-som-symphony.dtb \
+	imx8mp-var-som-symphony-10inch-xga.dtb \
+	imx8mp-var-som-symphony-10inch-xga-exc3000_over_i2c.dtb \
+	imx8mp-var-som-symphony-7inch-wvga.dtb \
 	imx8mq-pico-pi.dtb
 
 dtb-$(CONFIG_ARCH_IMXRT) += imxrt1050-evk.dtb \
