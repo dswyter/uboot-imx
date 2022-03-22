@@ -17,6 +17,32 @@
 		gpio5 = &pca9534;
 	};
 
+
+        gpio-keys {
+                  compatible = "gpio-keys";
+                  status = "okay";
+ 
+                  back {
+                          label = "Power";
+                          linux,code = <KEY_POWER>;
+                          gpios = <&pca9534 1 GPIO_ACTIVE_LOW>;
+                          wakeup-source;
+                  };
+ 
+                  home {
+                          label = "Power2";
+                          linux,code = <KEY_POWER2>;
+                          gpios = <&pca9534 2 GPIO_ACTIVE_LOW>;
+                          wakeup-source;
+                  };
+ 
+                  menu {
+                          label = "Sleep";
+                          linux,code = <KEY_SLEEP>;
+                          gpios = <&pca9534 3 GPIO_ACTIVE_LOW>;
+                          wakeup-source;
+                  };
+          };
 	reg_usdhc2_vmmc: regulator-usdhc2-vmmc {
 		compatible = "regulator-fixed";
 		pinctrl-names = "default";
